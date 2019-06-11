@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B93199EE22AF940B00A405F6 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93199ED22AF940B00A405F6 /* FeedResponse.swift */; };
+		B93199F022AF989C00A405F6 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93199EF22AF989C00A405F6 /* NetworkDataFetcher.swift */; };
 		B96CC4D622AE6661002456E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96CC4D522AE6661002456E9 /* AppDelegate.swift */; };
 		B96CC4DD22AE6663002456E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96CC4DC22AE6663002456E9 /* Assets.xcassets */; };
 		B96CC4E022AE6663002456E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B96CC4DE22AE6663002456E9 /* LaunchScreen.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B93199ED22AF940B00A405F6 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedResponse.swift; path = VKNewsLenta/Models/FeedResponse.swift; sourceTree = SOURCE_ROOT; };
+		B93199EF22AF989C00A405F6 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkDataFetcher.swift; path = VKNewsLenta/Services/NetworkDataFetcher.swift; sourceTree = SOURCE_ROOT; };
 		B96CC4D222AE6661002456E9 /* VKNewsLenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsLenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96CC4D522AE6661002456E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B96CC4DC22AE6663002456E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B93199EC22AF93D500A405F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B93199ED22AF940B00A405F6 /* FeedResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B96CC4C922AE6661002456E9 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +83,7 @@
 		B96CC4D422AE6661002456E9 /* VKNewsLenta */ = {
 			isa = PBXGroup;
 			children = (
+				B93199EC22AF93D500A405F6 /* Models */,
 				B9B70CB622AE71C50051BD65 /* Views */,
 				B9B70CB322AE71430051BD65 /* Controllers */,
 				B97F39C522AE823A00FB8D0C /* Classes */,
@@ -120,6 +133,7 @@
 			children = (
 				B9B70CB122AE6EE00051BD65 /* AuthService.swift */,
 				B97F39C722AE842500FB8D0C /* NetworkService.swift */,
+				B93199EF22AF989C00A405F6 /* NetworkDataFetcher.swift */,
 				B97F39C922AE85C100FB8D0C /* API.swift */,
 			);
 			path = Services;
@@ -238,11 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93199EE22AF940B00A405F6 /* FeedResponse.swift in Sources */,
 				B9B70CB222AE6EE00051BD65 /* AuthService.swift in Sources */,
 				B9B70CB522AE71540051BD65 /* AuthViewController.swift in Sources */,
 				B9B70CBA22AE7BA60051BD65 /* FeedViewController.swift in Sources */,
 				B96CC4D622AE6661002456E9 /* AppDelegate.swift in Sources */,
 				B97F39C822AE842500FB8D0C /* NetworkService.swift in Sources */,
+				B93199F022AF989C00A405F6 /* NetworkDataFetcher.swift in Sources */,
 				B97F39C422AE808E00FB8D0C /* UIViewControllers + Storuboard.swift in Sources */,
 				B97F39CA22AE85C100FB8D0C /* API.swift in Sources */,
 			);

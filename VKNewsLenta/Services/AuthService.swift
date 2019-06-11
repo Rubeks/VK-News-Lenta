@@ -44,7 +44,8 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     //Срабатывает при нажатие "Войти в ВК"
     func wakeUPSession() {
     
-        let scope = ["offline"]
+        let scope = ["wall", "friends"]
+        //let scope = ["post, photo"]
         
         //Пытается извлеч токен из хранилища и проверяет разрешено ли приложению использовать токен к доступу
         VKSdk.wakeUpSession(scope) { [delegate] (state, error) in
