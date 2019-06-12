@@ -16,6 +16,8 @@ struct FeedResponseWrapped: Decodable {
 
 struct FeedResponse: Decodable {
     var items: [FeedItem]
+    var profiles: [Profile]
+    var groups: [Group]
 }
 
 struct FeedItem: Decodable {
@@ -31,4 +33,30 @@ struct FeedItem: Decodable {
 
 struct CountableItem: Decodable {
     let count: Int
+}
+
+//Структуры для груп и людей которые постили
+protocol ProfileRepresenatable {
+    var id: Int { get }
+    var name : String { get }
+    var photo: String { get }
+}
+
+struct Profile: Decodable, ProfileRepresenatable {
+    let id: Int
+    let firstName: String
+    let lastName: String
+    let photo100: String
+    
+    var name: String { return firstName + " " + lastName }
+    var photo: String { return photo100 }
+    
+}
+
+struct Group: Decodable, ProfileRepresenatable {
+    let id: Int
+    let name: String
+    let photo100: String
+    
+    var photo: String { return photo100 }
 }
